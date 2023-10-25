@@ -1,0 +1,6 @@
+#!/bin/bash
+
+nasm -f elf32 sha.asm -o ex1.o
+ld -m elf_i386 ex1.o -o ex1
+./ex1
+echo "Exit status: "$?
